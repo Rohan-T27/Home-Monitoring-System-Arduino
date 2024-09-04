@@ -3,7 +3,7 @@ This code is designed for an Arduino-based system that combines multiple sensors
 ### Libraries Used
 1. **DHT.h** - Library for the DHT11 temperature and humidity sensor.
 2. **LiquidCrystal.h** - Library for controlling an LCD display.
-3. **Wire.h** and **`RTClib.h`** - Libraries for interacting with the DS1307 Real-Time Clock (RTC).
+3. **Wire.h** and **RTClib.h** - Libraries for interacting with the DS1307 Real-Time Clock (RTC).
 
 ### Pin Definitions
 - **DHT Sensor:**
@@ -17,9 +17,9 @@ This code is designed for an Arduino-based system that combines multiple sensors
   - **FANPIN (5):** Digital pin controlling the fan via a transistor.
 
 ### Sensor and Module Initializations
-- **DHT Sensor** (`dht`): Used to measure temperature.
-- **LCD Display** (`lcd`): Configured with specific Arduino pins.
-- **RTC Module** (`rtc`): Keeps track of the current time.
+- **DHT Sensor** (dht): Used to measure temperature.
+- **LCD Display** (lcd): Configured with specific Arduino pins.
+- **RTC Module** (rtc): Keeps track of the current time.
 
 ### Timer Variables
 - **previousMillis and interval:** Used to manage the LED on duration. `interval` is set to 60,000 milliseconds (1 minute).
@@ -38,7 +38,7 @@ This code is designed for an Arduino-based system that combines multiple sensors
 The main function repeatedly executes the following tasks:
 
 1. **PIR Sensor Reading:**
-   - Reads the state of the PIR motion sensor. If motion is detected (`pirVal == HIGH`), the LED is turned on for 1 minute and then turned off.
+   - Reads the state of the PIR motion sensor. If motion is detected (pirVal == HIGH), the LED is turned on for 1 minute and then turned off.
 
 2. **Time Handling:**
    - Retrieves the current time from the RTC and adjusts it for Eastern Time (ET), which is 12 hours behind UTC.
