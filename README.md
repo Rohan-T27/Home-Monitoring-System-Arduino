@@ -1,7 +1,7 @@
 This code is designed for an Arduino-based system that combines multiple sensors and components to monitor temperature, detect motion, and display information on an LCD screen. Here's a breakdown of how the code works:
 
 ### Libraries Used
-1. **`DHT.h`** - Library for the DHT11 temperature and humidity sensor.
+1. **DHT.h** - Library for the DHT11 temperature and humidity sensor.
 2. **`LiquidCrystal.h`** - Library for controlling an LCD display.
 3. **`Wire.h`** and **`RTClib.h`** - Libraries for interacting with the DS1307 Real-Time Clock (RTC).
 
