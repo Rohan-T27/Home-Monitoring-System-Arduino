@@ -2,19 +2,19 @@ This code is designed for an Arduino-based system that combines multiple sensors
 
 ### Libraries Used
 1. **DHT.h** - Library for the DHT11 temperature and humidity sensor.
-2. **`LiquidCrystal.h`** - Library for controlling an LCD display.
-3. **`Wire.h`** and **`RTClib.h`** - Libraries for interacting with the DS1307 Real-Time Clock (RTC).
+2. **LiquidCrystal.h** - Library for controlling an LCD display.
+3. **Wire.h** and **`RTClib.h`** - Libraries for interacting with the DS1307 Real-Time Clock (RTC).
 
 ### Pin Definitions
 - **DHT Sensor:**
-  - **`DHTPIN` (2):** Digital pin connected to the DHT11 sensor.
-  - **`DHTTYPE` (DHT11):** Type of DHT sensor used.
+  - **DHTPIN (2):** Digital pin connected to the DHT11 sensor.
+  - **DHTTYPE (DHT11):** Type of DHT sensor used.
 - **PIR Sensor:**
-  - **`PIRPIN` (3):** Digital pin connected to the PIR motion sensor.
+  - **PIRPIN (3):** Digital pin connected to the PIR motion sensor.
 - **LED:**
-  - **`LEDPIN` (4):** Digital pin connected to an LED.
+  - **LEDPIN (4):** Digital pin connected to an LED.
 - **Fan Control:**
-  - **`FANPIN` (5):** Digital pin controlling the fan via a transistor.
+  - **FANPIN (5):** Digital pin controlling the fan via a transistor.
 
 ### Sensor and Module Initializations
 - **DHT Sensor** (`dht`): Used to measure temperature.
@@ -22,7 +22,7 @@ This code is designed for an Arduino-based system that combines multiple sensors
 - **RTC Module** (`rtc`): Keeps track of the current time.
 
 ### Timer Variables
-- **`previousMillis` and `interval`:** Used to manage the LED on duration. `interval` is set to 60,000 milliseconds (1 minute).
+- **previousMillis and interval:** Used to manage the LED on duration. `interval` is set to 60,000 milliseconds (1 minute).
 
 ### `setup()` Function
 1. **Serial Monitor:** Initialized for debugging.
@@ -34,7 +34,7 @@ This code is designed for an Arduino-based system that combines multiple sensors
    - Checks if the RTC initializes correctly. If it fails, an error is displayed on the LCD, and the program stops.
    - Optionally, sets the RTC to the compile time (this line is commented out after the initial setup).
 
-### `loop()` Function
+### loop() Function
 The main function repeatedly executes the following tasks:
 
 1. **PIR Sensor Reading:**
