@@ -22,9 +22,9 @@ This code is designed for an Arduino-based system that combines multiple sensors
 - **RTC Module** (rtc): Keeps track of the current time.
 
 ### Timer Variables
-- **previousMillis and interval:** Used to manage the LED on duration. `interval` is set to 60,000 milliseconds (1 minute).
+- **previousMillis and interval:** Used to manage the LED on duration. interval is set to 60,000 milliseconds (1 minute).
 
-### `setup()` Function
+### setup() Function
 1. **Serial Monitor:** Initialized for debugging.
 2. **LCD Display:** Initialized and displays "Initializing..." message.
 3. **DHT Sensor:** Started for temperature reading.
